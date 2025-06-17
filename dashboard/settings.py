@@ -22,3 +22,14 @@ DEFAULT_DATA_DIR = "../data"
 FILE_PATTERN = "prod/*.json"  # Pattern to match JSON files
 SORT_FILES_BY = "mtime"  # Options: 'name', 'mtime' (modification time), 'ctime' (creation time)
 SORT_ORDER = "ascending"  # Options: 'ascending', 'descending'
+
+# Default functions
+GET_FUNC = lambda x: 0  # Default function to get data from the file
+PUT_FUNC = lambda x, y: y  # Default function to put data into the file
+VERIFY_MOTOR = False  # Whether to verify motor values
+DELAY = 0.1  # Delay in seconds for operations
+TOLERANCE = 1e-3  # Tolerance for motor value comparisons
+MAX_TRIES = 3  # Maximum number of tries for operations
+PARALLEL = True  # Whether to run operations in parallel
+SAMPLE_SIZE = 1   # Sample size for operations
+MAX_RETRIES = 5  # Maximum retries for operations

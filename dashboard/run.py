@@ -205,7 +205,7 @@ def main():
 
         st.sidebar.header("Step Controls")
         num_steps = st.sidebar.slider("Number of Steps to Show", 1, 10, settings.DEFAULT_NUM_STEPS)
-        last_step = st.sidebar.slider("Last Step Index", 0, max_step_index, max_step_index)
+        last_step = st.sidebar.slider("Last Step Index", 1, max_step_index, max_step_index)
         step_range = prepare_step_range(last_step, num_steps, max_step_index)
         displayed_steps = scan_data["steps"][step_range[0]:step_range[1]:step_range[2]]
         

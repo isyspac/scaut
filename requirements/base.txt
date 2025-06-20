@@ -7,4 +7,3 @@ plotly
 pyepics
 jupyter
 tqdm
-streamlit

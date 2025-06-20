@@ -1,7 +1,6 @@
+import os
 from ..core import config as cfg
-
-import .utils as elegant_logger, get_element_type
-
+from .utils import elegant_logger, get_element_type
 from .exceptions import ElegantFileNotFoundError, ElegantRemoveFileError, ElegantProcessError, ElegantFieldNotFoundError, ElegantElementNotFoundError
 
 
@@ -25,4 +24,3 @@ def check_parameter_exists(name, parameter):
     
 def check_element_exists(element):
     get_element_type(element)
-    

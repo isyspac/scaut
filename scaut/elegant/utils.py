@@ -150,13 +150,6 @@ def get_element_field_value(name, field):
     elegant_logger.warning(msg)
 
     elegant_logger.warning(f"Try find element {name} after run elegant!")
-    # try with run elegant!
-    _run_elegant_process()
-    for file in cfg.ELEGANT_DATA_EXIST_FILES:
-        value = _get_element_field_value_from_file(name, field, file)
-        if value is not None:
-            return value
-    elegant_logger.error(msg)
     raise ElegantFieldNotFoundError(msg)
 
 
@@ -198,14 +191,6 @@ def get_element_type(name):
     elegant_logger.warning(msg)
 
     elegant_logger.warning(f"Try find element {name} after run elegant!")
-    # try with run elegant!
-    _run_elegant_process()
-    for file in cfg.ELEGANT_EXIST_FILES_WITH_PARAMETERS:
-        value = _get_element_type_from_file(name, file)
-        if value is not None:
-            return value
-            
-    elegant_logger.error(msg)
     raise ElegantElementNotFoundError(msg)
 
 

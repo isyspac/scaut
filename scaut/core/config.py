@@ -88,9 +88,9 @@ open(ELEGANT_XYZ_DATA_FILE, "a").close()
 
 ELEGANT_BEAMLINE_DATA_COLUMNS = ["s", "Profile", "ElementName"]
 
-ELEGANT_TWISS_DATA_COLUMNS = ["ElementName", "s", "betax", "betay", "etax", "etay", "pCentral0", "xAperture", "yAperture"]
+ELEGANT_TWISS_DATA_COLUMNS = ["ElementName", "s", "alphax", "alphay", "betax", "betay", "etax", "etay", "pCentral0", "xAperture", "yAperture"]
 
-ELEGANT_CENTROID_DATA_COLUMNS = ["ElementName", "s", "Cx", "Cy", "pCentral"]
+ELEGANT_CENTROID_DATA_COLUMNS = ["ElementName", "s", "Cx", "Cy", "Cxp", "Cyp", "pCentral"]
 
 ELEGANT_PARAMETERS_DATA_COLUMNS = ["ElementName", "ElementParameter", "ParameterValue", "ElementType", "ElementOccurence", "ElementGroup"]
 

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "scaut"
-version = "0.1.0"
+version = "0.1.1"
 description = "Software package for the orchestration of accelerator experiments"
 readme = "README.md"
 authors = [

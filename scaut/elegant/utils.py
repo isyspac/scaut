@@ -132,12 +132,12 @@ def _get_element_field_value_from_file(name, parameter, file=cfg.ELEGANT_PARAMET
         return None
 
     try:
-        val = float(out[-1])
+        val = float(out[0])
         elegant_logger.debug(f"Parameter value (float): {val}")
         return val
     except ValueError:
-        elegant_logger.debug(f"Parameter value (string): {out[-1]}")
-        return out[-1]
+        elegant_logger.debug(f"Parameter value (string): {out[0]}")
+        return out[0]
 
 
 def get_element_field_value(name, field):
